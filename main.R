@@ -10,7 +10,7 @@ library(ggplot2)
 library(caret)
 library(reshape2)
 library(ggplot2)
-
+library(drake)
 
 source("scripts/data_cleaning.R")
 source("scripts/EDA.R")  # Ensure this file includes the necessary EDA functions
