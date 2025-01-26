@@ -1,3 +1,12 @@
+load_raw_data <- function(file_path) {
+  if (!file.exists(file_path)) {
+    stop("File not found: ", file_path)
+  }
+  data <- read.csv(file_path)
+  print("Raw data loaded.")
+  return(data)
+}
+
 # Define the clean_data function
 clean_data <- function(raw_data) {
   # Remove duplicate rows
