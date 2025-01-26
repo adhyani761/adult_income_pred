@@ -1,16 +1,14 @@
-library(targets)
-library(dplyr)
-library(ggplot2)
+install.packages(c("targets", "dplyr", "ggplot2", "caret", "reshape2", "drake"))
 
-source("scripts/setup.R")
-
+# Load the required libraries
 library(targets)
 library(dplyr)
 library(ggplot2)
 library(caret)
 library(reshape2)
-library(ggplot2)
 library(drake)
+
+
 
 source("scripts/data_cleaning.R")
 source("scripts/EDA.R")  # Ensure this file includes the necessary EDA functions
