@@ -1,5 +1,5 @@
 # Install required packages for the project
-required_packages <- c("dplyr", "ggplot2", "caret", "pROC", "yaml", "testthat","reshape2","targets")
+required_packages <- c("dplyr", "ggplot2", "caret", "pROC", "yaml", "testthat","reshape2","targets","drake")
 
 # Check for missing packages and install them
 missing_packages <- required_packages[!(required_packages %in% installed.packages()[, "Package"])]
