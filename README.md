@@ -46,10 +46,13 @@ git clone git@github.com:adhyani761/adult_income_pred.git
 cd adult_income_pred
 
 2)Install the required R packages:
+(Script provided in main.R)
 
-R
 install.packages(c("targets", "dplyr", "ggplot2", "caret", "reshape2"))
 
+OR
+
+Use renv::restore() and accept the installation and after that just run the script 
 
 3)Run the pipeline in main.R
 The main.R script is the entry point for the project. It sources all necessary R scripts, defines the drake pipeline, and runs the workflow from loading the data to training the model. Here’s a brief overview of what happens in main.R:
